@@ -32,7 +32,7 @@ $(document).ready(function(){
         }
 
         var player = new YT.Player(playerID, {
-            height: '250px',
+            height: '200px',
             width: '100%',
             videoId: videoID,
             events: {
