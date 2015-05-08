@@ -11,4 +11,4 @@ Now click on `Swap` checkboxes for your videos, pick your speed from the bottom 
 You can have up to 4 videos at the same time but you can you only swap 2 of them simultaneously. 
 
 
-You can try it [here](http://alibozorgkhan.github.io/minidj/).
+Try it [here](http://alibozorgkhan.github.io/minidj/).
