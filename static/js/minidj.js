@@ -26,7 +26,7 @@ $(document).ready(function(){
         }
 
         if (player) {
-            if (player.getVolume() > 0) {
+            if (player.getVolume() > 0 && !player.isMuted()) {
                 return;
             }
 
