@@ -107,6 +107,7 @@ $(document).ready(function(){
 
             swaps = [];
             $('[data-swap]').attr('checked', false);
+            $('[data-swap]').removeAttr('disabled');
         }
     };
 
