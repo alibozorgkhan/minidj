@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="static/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="static/css/minidj.css" />
+        <script src="static/js/jquery-1.11.3.min.js"></script>
+        <script src="static/js/bootstrap.min.js"></script>
+        <script src="static/js/underscore-min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-default text-center">
+            <a class="navbar-brand" href="/">Mini DJ</a>
+        </nav>
+
+        <a href="https://github.com/alibozorgkhan/minidj"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 video-box" data-player-id="player1">
+                    <div class="video-box-inner">
+                        <div class="form-inline">
+                            <div class="form-group">
+                                <input type="text" class="form-control" data-url>
+                            </div>
+                            <button type="button" class="btn btn-default" data-load>Load</button>
+                            <label class="btn btn-default" for="player1Swap">
+                                <input type="checkbox" id="player1Swap" data-swap="player1"> Swap
+                            </label>
+                        </div>
+                        <div class="player-wrapper">
+                            <div id="player1"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 video-box" data-player-id="player2">
+                    <div class="video-box-inner">
+                        <div class="form-inline">
+                            <div class="form-group">
+                                <input type="text" class="form-control" data-url>
+                            </div>
+                            <button type="button" class="btn btn-default" data-load>Load</button>
+                            <label class="btn btn-default" for="player2Swap">
+                                <input type="checkbox" id="player2Swap" data-swap="player2"> Swap
+                            </label>
+                        </div>
+                        <div class="player-wrapper">
+                            <div id="player2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 video-box" data-player-id="player3">
+                    <div class="video-box-inner">
+                        <div class="form-inline">
+                            <div class="form-group">
+                                <input type="text" class="form-control" data-url>
+                            </div>
+                            <button type="button" class="btn btn-default" data-load>Load</button>
+                            <label class="btn btn-default" for="player3Swap">
+                                <input type="checkbox" id="player3Swap" data-swap="player3"> Swap
+                            </label>
+                        </div>
+                        <div class="player-wrapper">
+                            <div id="player3"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 video-box" data-player-id="player4">
+                    <div class="video-box-inner">
+                        <div class="form-inline">
+                            <div class="form-group">
+                                <input type="text" class="form-control" data-url>
+                            </div>
+                            <button type="button" class="btn btn-default" data-load>Load</button>
+                            <label class="btn btn-default" for="player4Swap">
+                                <input type="checkbox" id="player4Swap" data-swap="player4"> Swap
+                            </label>
+                        </div>
+                        <div class="player-wrapper">
+                            <div id="player4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-inline swap-panel">
+                    <label>Swap Speed:</speed>
+                    <div class="checkbox"><label><input type="radio" name="swap-speed" value="500" checked> slowest</label></div>
+                    <div class="checkbox"><label><input type="radio" name="swap-speed" value="400"> slow</label></div>
+                    <div class="checkbox"><label><input type="radio" name="swap-speed" value="300"> medium</label></div>
+                    <div class="checkbox"><label><input type="radio" name="swap-speed" value="200"> fast</label></div>
+                    <div class="checkbox"><label><input type="radio" name="swap-speed" value="100"> fastest</label></div>
+                    <button class="btn btn-success" disabled data-do-swap>Swap Videos</button>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <p class="text-muted">
+                    Code licensed under MIT License, Version 1.0.
+                    Created by <a href="http://bozorgkhan.com" target="_blank">Ali Bozorgkhan</a>
+                </p>
+            </div>
+        </footer>
+
+        <script src="static/js/minidj.js"></script>
+    </body>
+</html>
