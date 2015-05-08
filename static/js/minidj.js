@@ -26,6 +26,10 @@ $(document).ready(function(){
         }
 
         if (player) {
+            if (player.getVolume() > 0) {
+                return;
+            }
+
             var wrapper = playerEl.closest('.player-wrapper');
             playerEl.remove();
             wrapper.append('<div id="' + playerID + '"></div>');
