@@ -36,7 +36,7 @@ $(document).ready(function(){
         }
 
         var player = new YT.Player(playerID, {
-            height: '150px',
+            height: '250px',
             width: '100%',
             videoId: videoID,
             events: {
